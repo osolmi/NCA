@@ -131,7 +131,6 @@ header.is-scrolled .gnb li {
 
 /* ========================== 베스트 슬라이드 */
 .best{ padding:var(--nca-padding-tb) var(--nca-padding-lr);}
-.best {padding-top: 8.125rem;}
 .best .best-swiper {
     width: 100%;
     position: relative;
@@ -145,12 +144,11 @@ header.is-scrolled .gnb li {
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
-    padding: 10%;
 }
 .best .img_box {
     width: 100%;
     height: 400px;
-    padding: 14px;
+    padding: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,7 +166,6 @@ header.is-scrolled .gnb li {
     display: flex;
     flex-direction: column;
     gap: 0.375rem;
-    margin-top: 12px;
 }
 .best .info_box .title {
     font-size: var(--nca-fsize-s);
@@ -196,7 +193,7 @@ header.is-scrolled .gnb li {
 }
 
 /* ========================== 어바웃 */
-.about {display: flex; height: 45.2rem; margin: var(--nca-padding-tb) 0;}
+.about {display: flex; height: auto; margin: var(--nca-padding-tb) 0;}
 .about_right { flex: 0.55; }
 .about_right img {width: 100%; height: auto;}
 .about_left {
@@ -304,15 +301,17 @@ header.is-scrolled .gnb li {
 /* ========================== 룩북 */
 .lookbook{
     display:flex; align-items: stretch;
+    /* justify-content: flex-start; */
     height: calc(100vh - 6.375rem);
     /* padding: var(--nca-padding-tb) 0; */
     gap: 1.875rem;
-    width: 100%;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
     box-sizing: border-box;
 }
 .lookbook_left {
-    flex: 0 0 665px;
-    width: 665px;   
+    flex: 0 0 580px;
+    width: 580px;   
     height: 100%;
     overflow: hidden;
 }
@@ -320,7 +319,7 @@ header.is-scrolled .gnb li {
     flex: 1;
     width: 100%; height: 100%;
     display: flex;
-    object-fit: contain;
+    object-fit: cover;
     display: block;
 }
 .lookbook_right {
@@ -331,7 +330,7 @@ header.is-scrolled .gnb li {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100%;
+    height: 100%; width: 100%;
     padding: var(--nca-padding-lr);
     box-sizing: border-box;
 }
@@ -339,9 +338,11 @@ header.is-scrolled .gnb li {
     margin-top: 0;
     margin-bottom: 3rem;
     text-align: center;
+    width: 100%;
 }
 .lookbook-swiper {
-    width: 90%;
+    width: 100%;
+    max-width: 720px;
     /* padding: 10%; */
     position: relative;
 }
@@ -449,7 +450,7 @@ header.is-scrolled .gnb li {
 /* ========================== GTL ===== */
 .gtl {padding-top: var(--nca-padding-tb);}
 .gtl h2 {font-size: 4rem; padding-left: var(--nca-padding-lr); margin-bottom: 0.625rem;}
-.gtl p {padding-left: var(--nca-padding-lr); margin-bottom: 1.875rem; color: var(--nca-dark);}
+.gtl p {padding-left: 3.3rem; margin-bottom: 1.875rem; color: var(--nca-dark);}
 .gtl_wrap{ display:flex;}
 .gtl_wrap > * {
     flex:1; text-align:left; cursor:pointer;
