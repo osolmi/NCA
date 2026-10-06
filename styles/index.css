@@ -305,8 +305,9 @@ header.is-scrolled .gnb li {
     height: calc(100vh - 6.375rem);
     /* padding: var(--nca-padding-tb) 0; */
     gap: 1.875rem;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: 100%;
+    /* margin-left: calc(-50vw + 50%); */
+    margin-left: 0;
     box-sizing: border-box;
 }
 .lookbook_left {
@@ -331,7 +332,7 @@ header.is-scrolled .gnb li {
     align-items: center;
     text-align: center;
     height: 100%; width: 100%;
-    padding: var(--nca-padding-lr);
+    padding: var(--nca-padding-lr) 0;
     box-sizing: border-box;
 }
 .lookbook_right h2 {
@@ -342,7 +343,7 @@ header.is-scrolled .gnb li {
 }
 .lookbook-swiper {
     width: 100%;
-    max-width: 720px;
+    max-width: 950px;
     /* padding: 10%; */
     position: relative;
 }

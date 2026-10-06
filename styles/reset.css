@@ -21,6 +21,9 @@ img, a {
     user-select: none;
     -webkit-user-select: none;
 }
+body {
+    overflow-x: hidden;
+}
 /* 개별 태그 초기값 */
 a {text-decoration:none;}
 ul,ol,li {list-style:none;}
